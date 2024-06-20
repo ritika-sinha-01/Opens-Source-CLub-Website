@@ -1,0 +1,269 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #041319;
+    color: #fff;
+    box-shadow: #041319;
+}
+
+header nav img.logo {
+    height: 50px;
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+header nav img.logo:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+}
+
+/* Cover Section */
+#cover {
+    background: linear-gradient(rgba(0, 119, 182, 0.5), rgba(0, 119, 182, 0.5)), url('Cover image.avif') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#cover h2 {
+    font-size: 2.5rem;
+}
+
+#cover p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Event Gallery */
+.event-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event {
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.event:hover img {
+    transform: scale(1.1);
+}
+
+.event-details {
+    padding: 30px;
+    background-color: rgb(16, 12, 12);
+}
+
+.event-details h3 {
+    margin-top: 0;
+    color: #eef3f6;
+}
+
+/* Team Section */
+.team-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* .team-member {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+} */
+
+.team-member {
+    flex: 1 1 200px;
+    margin: 1em;
+    padding: 1em;
+    background: #240909;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    margin-top: 0;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #1c2327;
+}
+
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+button:hover { 
+    background: #0a648a;
+}
+
+/* Specific Section Styles */
+#introduction {
+    background: linear-gradient(135deg, #050e54, #185a9d);
+    color: white;
+}
+
+#previous-events {
+    background: #34495e;
+    color: white;
+}
+
+#team {
+    background: linear-gradient( #342e29, #3b2e32);
+    color: white;
+}
+
+#contribute {
+    background: #27ae60;
+    color: white;
+}
+
+#contact {
+    background: linear-gradient( #1e092d, #6a25aa);
+    color: white;
+}
+
+#enroll {
+    background: linear-gradient( #050e54, #185a9d);
+    color: white;
+}
+
+section h2, section p, section a {
+    color: inherit;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0077b6;
+    color: white;
+}
+
+#events {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+}
+
+#contribute {
+    background: linear-gradient(rgb(3, 59, 37), #21605b, #51d483);
+    color: white;
+}
+
+#contribute h2, #contribute p {
+    color: white;
+}
+

@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Set a background color */
+    background-image: url('Background image.avif image.avif'); /* Set a background image */
+    background-size: cover; /* Make the background image cover the entire page */
+    background-repeat: no-repeat; /* Ensure the background image does not repeat */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background 0.3s, color 0.3s; /* Transition for hover effect */
+}
+
+header nav ul li a:hover {
+    background: #555;
+    color: #ff0;
+}
+
+header nav img.logo {
+    height: 50px;
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+header nav img.logo:hover {
+    transform: scale(1.1); /* Scale up the logo on hover */
+}
+
+#cover {
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    color: #fff;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.cover-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2em 1em;
+    margin: 2em 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    margin: 1em;
+    flex: 1 1 300px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.event:hover {
+    transform: scale(1.05); /* Scale up the event on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.event-info img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.event-info img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.event-details {
+    padding: 1em;
+}
+
+.team-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    flex: 1 1 200px;
+    margin: 1em;
+    padding: 1em;
+    background: #eee;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Scale up the team member on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
